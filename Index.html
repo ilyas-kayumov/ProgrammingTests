@@ -55,6 +55,83 @@
                   "int @var;"
                 ],
                 "correct":3
+              },
+              {
+                "question": "Какой вариант правильно объявляет и иницилизирует переменные x, y, z?",
+                "answers":
+                [
+                "int x = 0, int y = 0, int z = 0;",
+                "int x = 0, y = 0, z = 0;",
+                "int x, int y, int z = 0;",
+                "int x, y, z = { 0, 0, 0 };"
+                ],
+                "correct":1
+              },
+              {
+                "question": "В каком варианте ключевое слово var использовано верно?",
+                "answers":
+                [
+                "var x = 0;",
+                "var x;",
+                "var x, y;",
+                "var x = 0, y = 0;"
+                ],
+                "correct":0
+              },
+              {
+                "question": "Какой вариант правильно объявляет и иницилизирует переменные x, y?",
+                "answers":
+                [
+                "int x = 0; int y = x;",
+                "int x = 0; int y = y;",
+                "int x = 0, int y = y;",
+                "int x = 0, y = x;"
+                ],
+                "correct":0
+              },
+              {
+                "question": "В каком варианте имя переменной не вызывает ошибку компиляции?",
+                "answers":
+                [
+                "int _a1;",
+                "int 1a_;",
+                "int _a$;",
+                "int $a;"
+                ],
+                "correct":0
+              },
+              {
+                "question": "Какой вариант правильно объявляет и иницилизирует переменные x, y, z?",
+                "answers":
+                [
+                "int x = 0; int y = x; int z = y;",
+                "int x = y; int y = x; int z = 0;",
+                "int x = z; int y = x; int z = 0;",
+                "int x = z; int y = 0; int z = x;"
+                ],
+                "correct":0
+              },
+              {
+                "question": "Какое значение в результате получит x? int x = default(int);",
+                "answers":
+                [
+                "0",
+                "1",
+                "2 147 483 647",
+                "-2 147 483 648"
+                ],
+                "correct":0
+              },
+              {
+                "question": "Какое значение в результате получит z? int x = 0; int y = x; x = 1; int z = y;",
+                "answers":
+                [
+                "0",
+                "1",
+                "2 147 483 647",
+                "-2 147 483 648"
+                ],
+                "correct":0
               }
             ]
             }
