@@ -120,11 +120,21 @@ let json = {
   ]
   };
 
+function getInfoBar(props)
+{
+  return (
+    <div>
+      <p><a class="testTitle">{props.title}</a> | Вопрос: {currentQuestion + 1}/{props.questions.length}</p>
+      <hr/>
+    </div>
+  );
+}
+
 function getTests(props)
 {
 currentQuestion = 0;
 correctAnswers = 0;
-const tests = props.tests.map((test, i) => <li><a href={"javascript:onclick=renderQuestion(" + i + ");"}>{test.title}</a></li>);
+const tests = props.tests.map((test, i) => <li><a class="testTitle" href={"javascript:onclick=renderQuestion(" + i + ");"}>{test.title}</a></li>);
   return (
   <div>
     <h2>
@@ -148,7 +158,8 @@ currentCorrect = props.correct;
   <form>
       <p>{props.question}</p>
       {answers}
-      <a href={"javascript:onclick=renderQuestion(" + 0 + ");"}>Далее</a>
+      <hr/>
+      <a class="next" href={"javascript:onclick=renderQuestion(" + 0 + ");"}>Далее</a>
   </form>
   );
 }
@@ -166,9 +177,10 @@ if (currentQuestion > 0)
 
 if (currentQuestion < json.tests[i].questions.length)
 {
+let infoBar = getInfoBar(json.tests[i]);
 let question = getQuestion(json.tests[i].questions[currentQuestion]);
 ReactDOM.render(
-  question,
+  <div>{infoBar}{question}</div>,
   document.getElementById('root')
 );
 currentQuestion++;
