@@ -116,6 +116,23 @@ let json = {
           "correct":0
         }
       ]
+      },
+      {
+        "title": "Арифметические операции",
+        "questions": 
+        [
+          {
+            "question": "Какой вариант правильно находит cумму x, y и присваивает результат z?",
+            "answers":
+            [
+            "z = x + y;",
+            "z = +(x  y);",
+            "z = (x, y)+;",
+            "z = { x + y };"
+            ],
+            "correct":0
+          }
+        ]
       }
   ]
   };
@@ -152,14 +169,14 @@ let correctAnswers = 0;
 let currentCorrect = 0;
 
 function getQuestion(props) {
-const answers = props.answers.map((answer, i) => <p><input type="radio" name="answer" value={i} />{answer}</p>);
-currentCorrect = props.correct;
+const answers = props.question.answers.map((answer, i) => <p><input type="radio" name="answer" value={i} />{answer}</p>);
+currentCorrect = props.question.correct;
   return (
   <form>
-      <p>{props.question}</p>
+      <p>{props.question.question}</p>
       {answers}
       <hr/>
-      <a class="next" href={"javascript:onclick=renderQuestion(" + 0 + ");"}>Далее</a>
+      <a class="next" href={"javascript:onclick=renderQuestion(" + props.testIndex + ");"}>Далее</a>
   </form>
   );
 }
@@ -178,7 +195,7 @@ if (currentQuestion > 0)
 if (currentQuestion < json.tests[i].questions.length)
 {
 let infoBar = getInfoBar(json.tests[i]);
-let question = getQuestion(json.tests[i].questions[currentQuestion]);
+let question = getQuestion({question: json.tests[i].questions[currentQuestion], testIndex: i});
 ReactDOM.render(
   <div>{infoBar}{question}</div>,
   document.getElementById('root')
