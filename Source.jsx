@@ -273,11 +273,13 @@ function renderQuestion(i) {
 
 if (currentQuestion > 0)
 {
-    let correct = Array.from(document.getElementsByName("answer")).find(r => r.checked).value == currentCorrect;
+    const checkedAnswer = Array.from(document.getElementsByName("answer")).find(r => r.checked);
+    let correct = checkedAnswer.value == currentCorrect;
     if (correct)
     {
       correctAnswers++;
     }
+    checkedAnswer.checked = false;
 }
 
 if (currentQuestion < json.tests[i].questions.length)
