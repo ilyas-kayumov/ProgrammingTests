@@ -1,0 +1,42 @@
+body
+{
+    font-family: Helvetica, sans-serif;
+    padding: 0pt;
+}
+
+h1
+{
+    padding: 0pt;
+    line-height: 10pt;
+}
+
+h2
+{
+    font-size: 14pt;
+    padding: 0pt;
+    line-height: 10pt;
+}
+
+.title1
+{
+    font-size: 16pt;
+    font-weight: normal;
+    margin: 6pt;
+}
+
+.title2
+{
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 6pt;
+}
+
+.testTitle
+{
+    font-weight: bold;
+}
+
+.next
+{
+    font-weight: bold;
+}
