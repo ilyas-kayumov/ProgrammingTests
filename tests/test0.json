@@ -1,0 +1,105 @@
+{
+    "title": "Объявление и инициализация переменных",
+    "questions": [
+        {
+            "question": "Выберите правильное объявление переменной <code>price</code>:",
+            "answers": [
+                "price => 99;",
+                "{price};",
+                "int price;",
+                "price;"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Какой вариант правильно объявляет и инициализирует переменную <code>area</code>?",
+            "answers": [
+                "int area = 100;",
+                "int area => 100;",
+                "int area(100);",
+                "int area { 100 };"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "В каком варианте имя переменной <b>не</b> вызывает ошибку компиляции?",
+            "answers": [
+                "int var;",
+                "int 1var;",
+                "int var$;",
+                "int @var;"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Какой вариант правильно объявляет и инициализирует переменные <code>speed, distance, time</code>?",
+            "answers": [
+                "int speed = 0, int distance = 0, int time = 0;",
+                "int speed = 0, distance = 0, time = 0;",
+                "int speed, int distance, int time = 0;",
+                "int speed, distance, time = { 0, 0, 0 };"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "В каком варианте ключевое слово <code>var</code> использовано верно?",
+            "answers": [
+                "var debit;",
+                "var debit, credit;",
+                "var debit = 0;",
+                "var debit = 0, credit = 0;"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Какой вариант правильно объявляет и инициализирует переменные <code>width, height</code>?",
+            "answers": [
+                "int width = 100; int height = width;",
+                "int width = 100; int height = height;",
+                "int width = 100, int height = height;",
+                "int width = 100, int height = width;"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "В каком варианте имя переменной <b>не</b> вызывает ошибку компиляции?",
+            "answers": [
+                "int 1discount_;",
+                "int _discount1;",
+                "int _discount$;",
+                "int $discount;"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Какой вариант правильно объявляет и инициализирует переменные <code>health, stamina, mana</code>?",
+            "answers": [
+                "int health = stamina; int stamina = health; int mana = 100;",
+                "int health = mana; int stamina = health; int mana = 100;",
+                "int health = 100; int stamina = health; int mana = stamina;",
+                "int health = mana; int stamina = 100; int mana = health;"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Какое значение в результате получит <code>temperature</code>?<p><code>int temperature = default(int);</code></p>",
+            "answers": [
+                "0",
+                "1",
+                "2 147 483 647",
+                "-2 147 483 648"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Какое значение в результате получит <code>newDebit</code>?<p><code>int credit = 0;<br/>int debit = credit;<br/>credit = 100;<br/>int newDebit = debit;</code></p>",
+            "answers": [
+                "0",
+                "100",
+                "2 147 483 647",
+                "-2 147 483 648"
+            ],
+            "correct": 0
+        }
+    ]
+}

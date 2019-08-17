@@ -1,0 +1,105 @@
+{
+    "title": "Арифметические операции",
+    "questions": [
+        {
+            "question": "Какой вариант правильно находит cумму <code>price, tax</code> и присваивает результат <code>total</code>?",
+            "answers": [
+                "total = +(price  tax);",
+                "total = (price, tax)+;",
+                "total = price + tax;",
+                "total = { price + tax };"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Какой знак соответствует операции деления?",
+            "answers": [
+                "\\",
+                "|",
+                ":",
+                "/"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Какой вариант правильно находит квадрат <code>length</code> и записывает результат в <code>area</code>?",
+            "answers": [
+                "area = length * length;",
+                "area = length ^ 2;",
+                "area = length . length;",
+                "area = length ' 2;"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "В каком случае <code>balance</code> всегда меняет знак переменной?",
+            "answers": [
+                "balance--;",
+                "balance = -balance;",
+                "balance -= balance;",
+                "balance = balance;"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Какой знак соответствует операции взятия остатка от деления?",
+            "answers": [
+                "%",
+                "~",
+                "&",
+                "^"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "В каком случае переменная <code>power</code> увеличивается на <code>1</code>?",
+            "answers": [
+                "power++;",
+                "power += power + 1;",
+                "power += (power + 1);",
+                "power *= 1;"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "В каком случае значение переменной <code>salary</code> не меняется?",
+            "answers": [
+                "salary = salary - salary - salary;",
+                "salary = salary + salary + salary;",
+                "salary = salary + salary - salary;",
+                "salary = (-salary) - salary - salary;"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Какое значения в результате принимает <code>cents</code>?<p><code>int cents = 1000 % 100;</code></p>",
+            "answers": [
+                "10",
+                "1",
+                "0",
+                "100"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Какое значения в результате принимает <code>dollars</code>?<p><code>int dollars = 1000 / 100;</code>",
+            "answers": [
+                "10",
+                "1",
+                "0",
+                "100"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Какой знак соответствует операции умножения?",
+            "answers": [
+                ".",
+                "*",
+                "&",
+                "x"
+            ],
+            "correct": 1
+        }
+    ]
+}

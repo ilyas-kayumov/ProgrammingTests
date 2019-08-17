@@ -1,0 +1,105 @@
+{
+    "title": "Логические операции",
+    "questions": [
+        {
+            "question": "Какое значения в результате принимает <code>isSunny</code>? <p><code>bool isRainy = false;</br> bool isSunny = !isRainy; </code></p>",
+            "answers": [
+                "true",
+                "false",
+                "0",
+                "1"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Что нужно вставить вместо <code>(?)</code>, чтобы в результате <code>isSunny</code> принимало <code>false</code>? <p><code>bool isRainy = false;</br>bool isCloudy = true;</br> bool isSunny = !isRainy (?) !isCloudy; </code></p>",
+            "answers": [
+                "||",
+                "+",
+                "-",
+                "&&"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Какой оператор <b>не</b> является логическим?",
+            "answers": [
+                "&&",
+                "/",
+                "||",
+                "!"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Какое значения в результате принимает <code>isSunny</code>? <p><code>bool isSunny = true;</br> isSunny = !!isSunny; </code></p>",
+            "answers": [
+                "true",
+                "false",
+                "0",
+                "1"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Какие значение может принимать переменная типа <code>bool</code>?",
+            "answers": [
+                "true, false, 1, 0",
+                "true, false",
+                "true, false, undefined",
+                "1, 0"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Какой оператор является логическим?",
+            "answers": [
+                "-",
+                "/",
+                "!",
+                "+"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "В каком случае изначальное значение переменной <code>isSunny</code> меняется?",
+            "answers": [
+                "bool isSunny = true; isSunny = !isSunny;",
+                "bool isSunny = true; isSunny = isSunny;",
+                "bool isSunny = false; isSunny = false;",
+                "bool isSunny = true; isSunny = true;"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Какое значение принимает <code>isMature</code>? <p><code>int age = 16;<br/> bool isMature = age >= 18;</code></p>",
+            "answers": [
+                "true",
+                "false",
+                "null",
+                "undefined"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Что нужно вставить вместо <code>(?)</code>, чтобы в результате <code>equal</code> принимало значение <code>true</code>? <p><code> bool equal = (?) == 2; </code></p>",
+            "answers": [
+                "0",
+                "1",
+                "2",
+                "4"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "В каком случае изначальное значение переменной <code>isSunny</code> <b>не</b> меняется?",
+            "answers": [
+                "bool isSunny = true; isSunny = !isSunny;",
+                "bool isSunny = true; isSunny = !!isSunny;",
+                "bool isSunny = false; isSunny = isSunny || !isSunny;",
+                "bool isSunny = true; isSunny = isSunny && !isSunny;"
+            ],
+            "correct": 1
+        }
+    ]
+}

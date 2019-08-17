@@ -1,0 +1,115 @@
+{
+    "title": "Условия",
+    "questions": [
+        {
+            "question": "Каким будет результат программы?",
+            "questionCode": "tests/test3/code0.html",
+            "answers": [
+                "Your balance is not enough. Balance: 200",
+                "Your balance is not enough. Balance: 100",
+                "Thank you for your purchase! Balance: 100",
+                "null"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Каким будет результат программы?",
+            "questionCode": "tests/test3/code1.html",
+            "answers": [
+                "1",
+                "0",
+                "true",
+                "false"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Какое в результате примет значение переменная <code>speed</code>?",
+            "questionCode": "tests/test3/code2.html",
+            "answers": [
+                "0",
+                "60",
+                "80",
+                "900"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Каким будет результат программы?",
+            "questionCode": "tests/test3/code3.html",
+            "answers": [
+                "Great",
+                "Good",
+                "Not bad",
+                "Bad"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Какое в результате примет значение переменная <code>newState</code>?",
+            "questionCode": "tests/test3/code4.html",
+            "answers": [
+                "true",
+                "false",
+                "on",
+                "off"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Каким будет результат программы?",
+            "questionCode": "tests/test3/code5.html",
+            "answers": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Friday"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Какое в результате примет значение переменная <code>health</code>?",
+            "questionCode": "tests/test3/code6.html",
+            "answers": [
+                "0",
+                "75",
+                "50",
+                "100"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Что нужно вставить вместо <code>(1?)</code> и <code>(2?)</code>, чтобы в результате исполенения программа вывела <code>\"No power\"</code>?",
+            "questionCode": "tests/test3/code7.html",
+            "answers": [
+                "(1?) - elevatorIsBroken, (2?) -  noPower",
+                "(1?) - elevatorIsBroken, (2?) - noPower",
+                "(1?) - !elevatorIsBroken, (2?) - noPower",
+                "(1?) - !elevatorIsBroken, (2?) - !noPower"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Каким будет результат программы?",
+            "questionCode": "tests/test3/code8.html",
+            "answers": [
+                "Witch",
+                "Skeleton",
+                "White Mage",
+                "White Knight"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Каким будет результат программы?",
+            "questionCode": "tests/test3/code9.html",
+            "answers": [
+                "en",
+                "en-uk",
+                "ru-ru",
+                "en-us"
+            ],
+            "correct": 3
+        }
+    ]
+}
